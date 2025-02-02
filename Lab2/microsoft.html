@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft log in</title>
+</head>
+<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.whole-page{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.toppart1{
+   font-size: 12px;
+   display: flex;
+   justify-content:space-between;
+   align-items: left; 
+   padding: 15px 20px; 
+   background-color:white; 
+   font-size: 14px; 
+}
+
+#micr{
+    width:96px;
+    height: 31px;
+    margin-left: 140px;
+    margin-right: 0px;
+}
+
+#lupa{
+    width: 10px;
+    height: 10px;
+}
+#cart{
+    width: 10px;
+    height: 10px;
+}
+#signin{
+    width: 15px;
+    height: 15px;
+    margin-bottom:-4px ;
+}
+
+.toppart2{
+    border: 1px solid #006bbc;
+    background-color: #006bbc;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.highlight-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whitebox{
+    text-align:left;
+    position: absolute;
+    top: 22%;
+    left: 7%;
+    background: white;
+    padding:25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 160px;
+  
+}
+
+.whitebox h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+  
+}
+
+.whitebox p{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px;
+   
+}
+
+.whitebox button{
+    background-color: #006bbc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  
+
+}
+
+.whitebox button:hover{
+    background-color: #005FA4;
+}
+
+.contentcards{
+    display: flex;
+    align-items: center;
+}
+
+#tpptext{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#strelkki{
+    margin-left: 630px;
+    width: 190px;
+    height: 27px;
+    margin-top: 7px;
+}
+
+.shops {
+    display: flex; 
+    justify-content: space-around; 
+    margin: 40px; 
+    text-align: center;
+    gap: 20px; 
+}
+
+.shops img {
+    width: 60px; 
+    height: auto; 
+    margin-bottom: 5px; 
+}
+
+.shops p {
+    font-size: 16px; 
+    color: #005FA4; 
+    font-weight: 600; 
+    margin: 0;
+    text-decoration: underline
+}
+
+.contentcards{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 30px;
+ 
+}
+
+.block1{
+    border:2px solid lightgray;
+    border-radius: 5px;
+    margin-left: 60px;
+    width: 330px;
+}
+
+#but11{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    background-color: #005FA4;
+    border: 1px solid #005FA4;
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+}
+
+#header11{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#text11{
+    margin-left: 10px;
+}
+
+.block2{
+    border:2px solid lightgray;
+    border-radius: 5px;
+    width: 330px;
+}
+
+#but22{
+    margin-top: 66px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #005FA4;
+    border: 1px solid #005FA4;
+    color: white;
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+}
+
+#header22{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 350px;
+}
+
+#text22{
+    margin-left: 10px;
+}
+
+#new{
+    margin-left: 30px;
+    margin-top: 10px;
+    border: 1px solid #ffb900;
+    background-color: #ffb900;
+    width: 50px;
+    text-align: center;
+}
+
+.block3{
+    border:2px solid lightgray;
+    border-radius: 5px;
+    width: 330px;
+}
+
+#but33{
+    margin-top: 89px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #005FA4;
+    border: 1px solid #005FA4;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+}
+
+#header33{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#text33{
+    margin-left: 10px;
+}
+
+.block4{
+    border:2px solid lightgray;
+    border-radius: 5px;
+    margin-right: 60px;
+    width: 330px;
+}
+
+#but44{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #005FA4;
+    border: 1px solid #005FA4;
+    color: white;
+    font-size: 18px;
+    width: 230px;
+    height: 40px;
+}
+
+#header44{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#text44{
+    margin-left: 10px;
+}
+
+.shops{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.shops img{
+    width: 10px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.shops {
+    display: flex; 
+    justify-content: space-around; 
+    margin: 40px auto; 
+    text-align: center; 
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+ 
+
+.shops img {
+    width: 30px;
+    height: auto; 
+    margin-bottom: 5px; 
+    text-decoration: underline;
+    font-size: 11px;
+    color: #005FA4;
+}
+
+.shops p {
+    font-size: 12px; 
+    color: #005FA4;
+    font-weight: 600; 
+    margin: 0; 
+}
+.copilotimage{
+    max-width: 1400px;
+
+}
+#leftpart{    
+    margin-right:255px;
+    margin-top: 8px;
+    font-size:smaller;
+    color: black;
+}
+.rightpart{
+    font-size:11px;
+
+}
+
+.contentcards img{
+    width:330px;
+}
+</style>
+
+
+    <div class = "whole-page">
+
+        <div class = "toppart1">
+            <img id="micr" src ="Снимок экрана 2025-02-01 235334.png">
+            <span id = "leftpart" style = "white-space: pre;"> Microsoft 365    Teams    Copilot    Windows    Surface    Xbox    Deals    Small Business    Support</span>
+            <div class = "rightpart">
+                <span id = "dosearcha" style = "white-space: pre;"> All Microsoft     Search</span>
+                <img id = "lupa" src = "lupa1.png">
+                <span id = "docart" style = "white-space: pre;">   Cart</span>
+                <img id = "cart" src = "cart1.png">
+                <span id = "dosign" style = "white-space: pre;">   Sign in</span>
+                <img id="signin" src = "signin1.png">
+            </div>
+    
+        </div>
+
+        <div class = "toppart2">
+            <p id="tpptext">Pay your way, with flexible payment options available at checkout. Learn more > </p>
+        </div>
+
+        <section class="whitesection">
+            <img src="copilot.jpeg" class="copilotimage">
+            <div class="whitebox">
+                <h2>Meet Surface Pro</h2>
+                <p>This laptop's unrevalled flexibility and AI features like Live Captions and Cocreator enable you do more than you ever imagined.</p>
+                <button>Shop now</button>
+            </div>
+        </section>
+        
+        <img id="strelkki" src = "strelki.jpg">
+
+        <div class = "shops">
+            <div class="shop-1">
+            <img id="i1" src="icon1.png">
+            <p id="it1">Shop Surface devices</p></div>
+
+            <div class="shop-2">
+            <img id="i2" src="icon2.png">
+            <p id="it2">Shop Xbox games and consoles</p></div>
+ 
+            <div class="shop-3">
+            <img id="i3" src="icon3.png">
+            <p id="it3">Shop for accessories</p></div>
+
+            <div class="shop-4">
+            <img id="i4" src="icon4.png">
+            <p id="it4">Shop for your business</p></div>
+
+            <div class="shop-5">
+            <img id="i5" src="icon5.png">
+            <p id="it5">Find your next PC</p></div>
+
+            <div class="shop-6">
+            <img id="i6" src="icon6.png">
+            <p id="it6">Choose your Microsoft 365</p></div>
+
+        </div>
+
+        <div class = "contentcards">
+            <div class = "block1">
+                <div class = "table">
+                    <img id ="1bi" src="1cc.jpeg">
+                    <h1 id="header11">Surface Laptop, Copilot+ PC</h1>
+                    <p id="text11">Unlock AI features like Live Captions and <br>Cocreator with this exceptionally powerful laptop.</p>
+                    <button id="but11">Shop now</button>
+                </div>
+            </div>
+            <div class = "block2">
+                <div class = "table">
+                    <img id ="2bi" src="2cc.jpeg">
+                    <p id="new">New</p>
+                    <h1 id="header22">Reveal the mysteries </h1>
+                    <p id="text22">Get the Xbox Wireless Controller – Pulse <br> Cipher, featuring a transparent red design, <br> silver interior, metallic features, and more.</p>
+                    <button id="but22">Pre-order now</button>
+                </div>
+            </div>
+            <div class = "block3">
+                <div class = "table">
+                    <img id ="3bi" src="3cc.jpeg">
+                    <h1 id="header33">Xbox Series S</h1>
+                    <p id="text33">Next-gen performance in the smallest Xbox ever.</p>
+                    <button id="but33">Shop Xbox Series S</button>
+                </div>
+            </div>
+            <div class = "block4">
+                <div class = "table">
+                    <img id ="4bi" src="4cc.jpeg">
+                    <h1 id="header44">Copilot is your AI companion</h1>
+                    <p id="text44">Always by your side, ready to support you <br> whenever and wherever you need it.</p>
+                    <button id="but44">Download the Copilot app</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
