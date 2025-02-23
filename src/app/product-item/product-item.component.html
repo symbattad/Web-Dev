@@ -1,0 +1,9 @@
+<div class="product-item">
+  <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>Likes: {{ product.likes }}</p>
+    <button (click)="onLike()">Like</button>
+    <button (click)="onRemove()">Remove</button>
+  </div>
+  

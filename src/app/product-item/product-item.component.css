@@ -1,0 +1,22 @@
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-item button {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  .product-image {
+    width: 100%;   /* или задать нужную ширину */
+    height: auto;  /* сохранение пропорций */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
